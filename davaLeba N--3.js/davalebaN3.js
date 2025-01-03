@@ -55,36 +55,36 @@
 
 // bolo davaleba
 
-function maTResulT() {
-    let frisTQue = prompt("Please enter the first number:");
-    let oNliSIMbols = prompt("Please enter an operator: *, /, +, -");
-    let SecoNdFun = prompt("Please enter the second number:");
-    frisTQue = Number(frisTQue);
-    SecoNdFun = Number(SecoNdFun);
+// function maTResulT() {
+//     let frisTQue = prompt("Please enter the first number:");
+//     let oNliSIMbols = prompt("Please enter an operator: *, /, +, -");
+//     let SecoNdFun = prompt("Please enter the second number:");
+//     frisTQue = Number(frisTQue);
+//     SecoNdFun = Number(SecoNdFun);
 
-    if(isNaN(frisTQue)||isNaN(SecoNdFun)){
-        alert("plis enter NUMBERS!:")
-    }
-    let returni
-    if(oNliSIMbols==="*"){
-        returni=frisTQue*SecoNdFun
-        alert(`${returni} accepted:`)
-    }else if(oNliSIMbols==="/"){
-        returni=frisTQue/SecoNdFun
-        alert(`${returni} accepted:`)
-    }
-    else if(oNliSIMbols==="+"){
-        returni=frisTQue+SecoNdFun
-        alert(`${returni} accepted:`)
-    }
-    else if(oNliSIMbols==="-"){
-        returni=frisTQue-SecoNdFun
-        alert(`${returni} accepted:`)
-    }else{
-        alert("None of the above actions are described!")
-    }
-}
-maTResulT()
+//     if(isNaN(frisTQue)||isNaN(SecoNdFun)){
+//         alert("plis enter NUMBERS!:")
+//     }
+//     let returni
+//     if(oNliSIMbols==="*"){
+//         returni=frisTQue*SecoNdFun
+//         alert(`${returni} accepted:`)
+//     }else if(oNliSIMbols==="/"){
+//         returni=frisTQue/SecoNdFun
+//         alert(`${returni} accepted:`)
+//     }
+//     else if(oNliSIMbols==="+"){
+//         returni=frisTQue+SecoNdFun
+//         alert(`${returni} accepted:`)
+//     }
+//     else if(oNliSIMbols==="-"){
+//         returni=frisTQue-SecoNdFun
+//         alert(`${returni} accepted:`)
+//     }else{
+//         alert("None of the above actions are described!")
+//     }
+// }
+// maTResulT()
 
 
 
