@@ -15,3 +15,6 @@ FiltArray()
 //და უნდა ამოიღოს შემდეგ ძირითად ფუნქციას რომელშიდაც ისრისებური ფუნქცია შევქმენი ვიძახებ  FiltArray()
 
 
+// let x=['hey','bey','boy','gogli','hey']
+// console.log(x.indexOf("hey"))
+// console.log(x.lastIndexOf("hey"))
