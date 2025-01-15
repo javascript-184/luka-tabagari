@@ -6,23 +6,17 @@
 //  return result; ეს დააბრუნებს მიღებულ შედეგს მას შემდეგ რაც ციკლი გაჩერდეაბ
 
 
- 
-
-
-
 function fun(number, power) {
     let result = 1;
     for (let ii = 0; ii < power; ii++) { 
         result *= number;
-    }
+      }
     return result;
 }
-
 const funResult = fun(
     Number(prompt("Enter the base number:")),
     Number(prompt("Enter the exponent:"))
 );
-
 alert(funResult);
 
 
