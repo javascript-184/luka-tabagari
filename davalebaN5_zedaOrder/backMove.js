@@ -92,4 +92,3 @@ while(Ereyisnumber!=0){
 // while(Ereyisnumber>=Twen){
 //   console.log(Ereyisnumber)
 //   Ereyisnumber=Ereyisnumber-20
-// }
