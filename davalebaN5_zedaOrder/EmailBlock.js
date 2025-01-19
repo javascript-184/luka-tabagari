@@ -1,6 +1,6 @@
 let EmailAdres=prompt("Enter gemeil:!")
 
-function emailEd(mail){
+function emailEd(mail){  
     let [name,last]=mail.split("@");
     let [firstName,lasTname]=name.split(".")
     let deleteLastname= ".".repeat(lasTname.length)

@@ -1,30 +1,42 @@
-const calculator = {
+let calculator = {
     num1: 10,
-    num2: 5,
+    num2: 3,
+    add: function () {
+        return this.num1 * this.num2
 
-    add() {
-        return this.num1 + this.num2;
     },
 
-    subtract() {
-        return this.num1 - this.num2;
+    substract: function () {
+        return this.num1 / this.num2
     },
 
-    multiply() {
-        return this.num1 * this.num2;
+
+    multiply: function () {
+        return this.num1 + this.num2
+
+
+    },
+    divide: function () {
+        return this.num1 - this.num2
+
+
     },
 
-    divide() {
-        if (this.num2 !== 0) {
-            return this.num1 / this.num2;
-        } else {
-            return "გაყოფა ნულზე შეუძლებელია!";
-        }
-    }
-};
+    neWbranch: function () {
+        return this.num2 !== 0 ? this.substract() : "Cannot divide by zero"
 
-// შედეგების გამოტანა
-console.log(` ${calculator.add()}`); 
-console.log(` ${calculator.subtract()}`); 
-console.log(` ${calculator.multiply()}`); 
-console.log(` ${calculator.divide()}`); 
+    },
+}
+
+console.log(calculator.add())
+console.log(calculator.neWbranch())
+console.log(calculator.multiply())
+console.log(calculator.divide())
+
+//ამ შემთხვევა ში 3 მოქმედებას აკეთებს ფუნქციები რომლებიც ქვემით კო ნსოლებში არ სი გამოძახებულები აქ
+//სრულდება გამრავლება გაყოფა მიმატება გამოკლება შემდეგ ბოლოში
+//    return this.num2!==0  ?this.substract():"Cannot divide by zero"  ეს მოქმედებით ეს ჩგამოვა თუ 0  უდრის
+//გამოვა ეს ყველაფერი შემდეგ გამოდის console.log(calculator.divide()) რიგობისდა მიხედვით რადგან ფუნქციები რიგისდა
+//მიხედვით დავალაგე და ყველა მოქმედება სრულდება
+ 
+
