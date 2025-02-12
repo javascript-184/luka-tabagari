@@ -122,7 +122,7 @@ function checkPasswordSecurity() {
         if (stopSymbols.includes(char)) {
             submitBtn.disabled = true;
             passwordRes.innerText = "Do not use special symbols like !, @, $, etc.";
-            return; // ვაჩერებთ ფუნქციის შესრულებას, რომ აღარ გააგრძელოს
+            return; // ვაჩერებთ ფუნქციის შესრულებას, რომ აღარ გააგრძელოს ისე არარფერს არ ააბრუნებს უბრალოდ Brekeსავითაა
         }
     } 
     
