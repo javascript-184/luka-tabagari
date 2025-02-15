@@ -1,0 +1,27 @@
+img{
+    border-radius: 10%;
+}
+
+.imaGesdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+
+}
+#submitBtn{
+    display: block;
+    width: 10%;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+#submitBtn:hover{
+    transition: 2s;
+    background-color: aqua;
+    font-style: italic;
+    color: blueviolet;
+    text-shadow: 2px 2px 3px red;
+
+}
