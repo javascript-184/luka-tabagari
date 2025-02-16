@@ -7,11 +7,7 @@ window.addEventListener(`DOMContentLoaded`,()=>{
 
     let password=document.getElementById("password")
     password.addEventListener("keyup",checkPassword)
-    
-
-       
-
-})
+});
 
 function loginChecker(){
     let username=document.getElementById("username")
