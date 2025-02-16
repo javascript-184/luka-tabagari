@@ -7,7 +7,7 @@ let clickCount = 0;
 function submitBtnFuncshen() {
     let img1 = document.getElementById("img1");
     let img2=document.getElementById("img2")
-  clickCount++
+    clickCount++
   if (clickCount<5){
     if (img1.style.width === "10%") {
         img1.style.width = "50%";
@@ -31,24 +31,4 @@ else{
 }
 
 
-
-
-
-
-
-
-
-
-// window.addEventListener(`DOMContentLoaded`, () => {
-//     let img1 = document.getElementById("img1");
-//     let img2 = document.getElementById("img2");
- 
-//     // თავიდან მეორე ფოტო უნდა დაიმალოს
-//     img2.style.display = "none";
- 
-//     img1.addEventListener("click", () => {
-//        img1.style.display = "none";  // პირველი სურათი იმალება
-//        img2.style.display = "block"; // მეორე სურათი ჩნდება
-//     });
-//  });
  

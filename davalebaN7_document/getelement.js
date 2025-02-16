@@ -91,27 +91,25 @@ function checkPassword(){
     checkPasswordSecurity()
 };
 
-// function checkPasswordSecurity(){
-//     let password=document.getElementById("password")
-//     let passwordRes=document.getElementById("passwordRes") 
-//     let submitBtn=document.getElementById("submitBtn")
+function checkPasswordSecurity(){
+    let password=document.getElementById("password")
+    let passwordRes=document.getElementById("passwordRes") 
+    let submitBtn=document.getElementById("submitBtn")
    
-//     const siMbols="!@#$%^&*()_=+"
+    const siMbols="!@#$%^&*()_=+"
+    for (let char of password.value) {
+     if (siMbols.includes(char)) {
+        submitBtn.disabled = true;
+        passwordRes.innerText = "Do not use special symbols like !, @, $, etc.";
+         passwordRes.style.color="red"
+        return; 
+         }
+    } 
+            
 
-//     for(let stopsimBol of siMbols){
-//         if(siMbols.includes(stopsimBol)){
-//             submitBtn.disabled=true
-//             return
+}
 
-//         }else{
-//             passwordRes.innerText=""
-//             submitBtn.disabled=false
-
-//         }
-
-//     }
-// }
-
+// ამის ქვემოთ იგივე კოდია და ზემოთ ჩემებურად გავაკეთე 
 
 
 
