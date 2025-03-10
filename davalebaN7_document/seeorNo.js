@@ -7,7 +7,6 @@ window.addEventListener("DOMContentLoaded",()=>{
   display.addEventListener("click",displeyFuncshen);
 });
 
-
 function tohideFuncshen(){
     let its =document.getElementById("its")
     its.style.display="none"
@@ -48,9 +47,10 @@ function displeyFuncshen(){
     tohide.style.backgroundColor="green"
     let display=document.getElementById("display")
     display.style.backgroundColor="green"
+  
 
 
     let buuTornDIv = document.querySelector(".buuTornDIv"); // ერთი ელემენტის არჩევა
     buuTornDIv.style.margin = "0%";
-}
+}       
 
