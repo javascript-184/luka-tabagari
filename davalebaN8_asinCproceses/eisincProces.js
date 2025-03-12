@@ -1,5 +1,14 @@
 window.addEventListener("DOMContentLoaded",()=>{
-       submitFoncshen()
+  let divboxmarger=document.querySelectorAll(".divboxmarger")
+  divboxmarger.forEach(divboxmarger=>{
+    divboxmarger.style.display="none"
+  });
+  let submit=document.getElementById("submit")
+  submit.addEventListener("click",sumbitFincshen)
+  
+
+
+
 
     firstfunCshenH1()
     
@@ -8,13 +17,21 @@ window.addEventListener("DOMContentLoaded",()=>{
     bouns.style.fontSize="200%"
     let pteg1=document.getElementById("pteg1")
     pteg1.style.width="40%"
-   
-  
 
 });
- function submitFoncshen(){
-  
- }
+
+function sumbitFincshen(){
+    let divboxmarger=document.querySelectorAll(".divboxmarger")
+  divboxmarger.forEach(divboxmarger=>{
+    if(divboxmarger.style.display==="block"){
+        divboxmarger.style.display = "none";
+
+    }else{
+        divboxmarger.style.display="block"
+    }
+  });
+
+}
 
 let pteg2=document.getElementById("pteg2");
 pteg2.style.width="28%";
@@ -36,8 +53,7 @@ pteg2.addEventListener("mouseout",()=>{
     pteg2.style.color=""
     pteg2.style.textShadow=""
     pteg2.style.boxShadow=""
-    pteg2.style.display="flex"
-    pteg2.style.justifyContent="center"
+   
 });
 
 function firstfunCshenH1(){
