@@ -21,6 +21,7 @@ function sumbitFincshen() {
     divboxmarger.forEach(divboxmarger => {
         if (divboxmarger.style.display === "block") {
             divboxmarger.style.display = "none";
+            
 
         } else {
             divboxmarger.style.display = "block"
@@ -69,6 +70,7 @@ function firstfunCshenH2() {
             firtsh2.style.textAlign = "center";
             firtsh2.style.transition = "text-align 0.5s ease";
         }, 100);
+     
     });
     firtsh2.addEventListener("mouseout", () => {
         firtsh2.style.textAlign = "";

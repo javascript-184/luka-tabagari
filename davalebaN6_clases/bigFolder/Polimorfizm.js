@@ -84,3 +84,4 @@ let shapeName = new Shape("Circle");
 alert(shapeName.area())
 
 
+console.log(2)
