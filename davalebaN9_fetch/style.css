@@ -1,0 +1,143 @@
+/* 
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="divmarger">
+        <button id="button"></button>
+        <img id="img"  width="300px" height="300px" alt="">
+    </div>
+<br>
+<br>
+<br>
+
+    <div class="divmarger2">
+        <button id="button2" ></button>
+        <img id="imgCat" width="250px" height="250px" src="" alt="">
+    </div>
+
+ 
+    
+</body>
+
+<script src="/API.js"></script>
+</html>
+<style>
+    #imgCat{
+        border-radius: 20%;
+
+    }
+   .divmarger2{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+   }
+#button3{
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+}
+    #button {
+        display: flex;
+        width: 200px;
+        height: 20px;
+        background-color: aqua;
+        box-shadow: 2px 2px 3px red;
+        border-radius: 10px;
+        animation-name: but;
+        animation-iteration-count: infinite;
+        animation-duration: 11s;
+    }
+    @keyframes but{
+        10%{
+            background-color: blue;
+        }
+        20%{
+            background-color: bisque;
+        }
+        30%{
+            background-color: blueviolet;
+        }
+        40%{background-color: brown;}
+        50%{background-color: chocolate;}
+    }
+    .divmarger{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        border: solid 4px;
+        width: 21%;
+        border-radius: 10px;
+        background-color: aqua;
+        animation-name: charcho;
+        animation-iteration-count: infinite;
+        animation-duration: 11s;
+    }
+    @keyframes charcho{
+        10%{
+            background-color: blueviolet;
+            box-shadow: 20px 31px 3px red;
+        }
+        20%{
+            background-color: antiquewhite;
+            box-shadow: 2px 3px 3px rgb(119, 98, 98);
+
+        }
+        30%{
+            background-color: brown;
+        }
+    }
+    #img{
+        display: block;
+        animation-name: dza;
+        animation-iteration-count: infinite;
+        animation-duration: 11s;
+        border-radius: 10%;
+
+    }
+    @keyframes dza{
+        10%{
+            background-color: aqua;
+            box-shadow: 2px 4px 5px red;
+            border-radius: 20%;
+        }
+        20%{
+            background-color: blue;
+            box-shadow: 5px 2px 27px rgb(0, 255, 98);
+            border-radius: 30%;
+
+
+        }
+        30%{
+            background-color: rgb(10, 163, 252);
+            box-shadow: 10px 15px 2px rgb(74, 85, 78); 
+            border-radius: 40%;
+
+        }
+        40%{
+            background-color: rgba(255, 69, 193, 0.26);
+            box-shadow: 10px 15px 2px rgb(191, 255, 14);
+            border-radius: 50%;
+  
+        }
+        50%{
+            background-color: rgba(121, 25, 245, 0.26);
+            box-shadow: 10px 15px 2px rgb(238, 111, 196);   
+        }
+    }
+    #button2{
+        width: 30px;
+        height: 30px;
+        background-color: blue;
+        border-radius: 10px;
+    }
+</style> --> */
