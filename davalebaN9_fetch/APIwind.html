@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <h2 id="GetWather">wind speed</h2>
+    <input id="Windinput" placeholder="Enter Wind name" />
+    <button id="Windbtn">Get Wind</button>
+    <div id="resulTWind"></div>
+  </body>
+  <script src="/APIWIND.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Sigmar&family=Sofia&display=swap');
+    #GetWather{
+        display: none;
+        align-items: center;
+        animation-name: n;
+        animation-duration: 12s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+
+    }
+    
+    @keyframes n{
+        10%{
+            font-family: "Coral Pixels", serif;
+            color: white;
+            text-shadow: 3px 3px 2px red;
+            display: flex;
+            align-items: center;
+
+        }
+        20%{
+            color: rgb(130, 130, 134);
+            text-shadow: 2px 2px 3px rgb(104, 14, 194);
+            font-family: "Sofia", sans-serif;
+            display: flex;
+            align-items: center;
+
+        }
+        30%{
+            display: flex;
+            align-items: center;
+           color: bisque;
+           text-shadow: 2px 2px 4px green; 
+           font-family: "Sigmar", sans-serif;
+
+        }
+    }
+    #Windinput {
+      padding: 5px;
+      border-radius: 10px;
+      text-align: center;
+      animation-name: windinp;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes windinp{
+        10%{
+            background-color: aquamarine;
+            box-shadow: 3px 3px 4px rgb(255, 79, 176);
+
+        }
+        20%{
+            background-color: aqua;
+            box-shadow: 3px 3px 4px rgb(0, 114, 25);
+
+        }
+        30%{
+            background-color: blue;
+            box-shadow: 3px 3px 4px rgb(99, 100, 98);
+
+        }
+        40%{
+            background-color: blueviolet;
+            box-shadow: 3px 3px 4px greenyellow;
+        }
+    }
+    #Windbtn {
+      padding: 5px;
+      border-radius: 12%;
+      text-align: center;
+      background-color: antiquewhite;
+      animation-name: windbut;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-delay: 2s;
+    }
+    @keyframes windbut {
+      10% {
+        color: white;
+        background-color: rgb(107, 117, 117);
+        text-shadow: 2px 2px red;
+        box-shadow: 2px 3px 4px green;
+      }
+      20% {
+        color: rgb(117, 23, 23);
+        background-color: rgb(124, 247, 247);
+        text-shadow: 2px 2px rgb(230, 15, 15);
+        box-shadow: 2px 3px 4px rgb(0, 100, 0);
+      }
+      30% {
+        color: rgb(3, 197, 107);
+        background-color: rgb(0, 133, 115);
+        text-shadow: 2px 2px rgb(230, 15, 15);
+        box-shadow: 2px 3px 4px rgb(233, 7, 176);
+      }
+    }
+/* პირველი ამინდის ანიმაციის კოდი */
+    @keyframes bgChange {
+      0%   { background-color: green; }
+      50%  { background-color: yellow; }
+      100% { background-color: rgb(0, 81, 128); }
+    }
+    /* მეორე ანუიმაციის კოდი */
+    @keyframes changen2{
+        0%   { background-color: rgb(149, 209, 149); }
+      50%  { background-color: rgb(236, 165, 12); }
+      100% { background-color: rgb(98, 0, 110); } 
+    }
+    /* მესამე ამინდის ანიმაცია */
+    @keyframes changen3{
+        0%   { background-color: rgb(6, 250, 6); }
+      50%  { background-color: rgb(79, 155, 255); }
+      100% { background-color: rgb(225, 0, 255); } 
+    }
+  </style>
+</html>
