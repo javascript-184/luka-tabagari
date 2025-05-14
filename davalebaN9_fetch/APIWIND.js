@@ -42,6 +42,36 @@
 // //         Wind speed in ${Windinput} (Lat: ${latitude}, Lon: ${longitude}) is:
 // //         <strong>${windspeed} km/h  is:${weather}°C</strong>
 // //         </p>
+//ამ შემთხვევავში ლოკალსტრიჯით ამოვიღე თითეული ის პარამეტრი რომელიც ამოვიღე api-დან და ჩავამაგრე ლოკალსთორიჯიშ
+// localStorage.setItem("lastCity", Windinput);
+// localStorage.setItem("lastLatitude", latitude);
+// localStorage.setItem("lastLongitude", longitude);
+// localStorage.setItem("lastWindspeed", windspeed);
+// localStorage.setItem("lastTemperature", weather);
+
+//ამ შემთხვევეაში მონაცმებს რომლებსაც ვითღებ ვაბრუნებ თავის პირველ მდგო ბა]მარეობაში მასივს json.parse-თი
+//და ამ მონაცემებს ვამატებ push ით ბოლოში ანუ ეს პარამეტრები დავამატე ვასივიში ობიექტი რადგან {-ეს გამოვიყენე
+//შემდეგ აქ გასაღები მნიშვნელობის ფორმატში ვაბრუნებ ამ ყველაფერს 
+//date: new Date().toLocaleString()--ამით ვიღებთ ზოგადი დროის Data-ს მონაცემებს და ამაში ვამატებთ ამით
+//არაფერი არ იქნება იმის გარდა რომ ეს იბრალოდ მოგვცემს ზუსტ თარიღს და დროს თუ როდის შეიცვალა localstorage-ში
+//რაიმე ტიპის ინფორმაცია
+//// localStorage.setItem("Windinput",JSON.stringify(loCalstrages))-ხოლო ამით კი უკვე მასივად
+//გადაკონვერტირებულად მონაცემებს ვაბრუნებთ ისევ სტრიგად რათა აღქმა მოხდეს წინააღმდეგ შემთხვევეაში ლოკალ-სტროიჯი 
+//ვერ მიითრებს როგორც მასივს: 
+
+
+// let loCalstrages=JSON.parse(localStorage.getItem("Windinput") || "[]")
+// loCalstrages.push({
+//   citi:Windinput,
+//   lat:latitude,
+//   long:longitude,
+//   winnspeed:windspeed,
+//   weather:weather,
+//   date: new Date().toLocaleString()
+
+// });
+// localStorage.setItem("Windinput",JSON.stringify(loCalstrages))
+
 
 document.getElementById("Windbtn").addEventListener("click", () => {
   let Windinput = document.getElementById("Windinput").value.trim();
