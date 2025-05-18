@@ -72,6 +72,8 @@
 // });
 // localStorage.setItem("Windinput",JSON.stringify(loCalstrages))
 
+// 🔹 toLocaleString() არის JavaScript-ის მეთოდი, რომელსაც ვიყენებთ იმისთვის,
+//  რომ რიცხვები ან თარიღები გადავაქციოთ ტექსტად, კონკრეტული ენისა და რეგიონული ფორმატის მიხედვით (locale).
 
 document.getElementById("Windbtn").addEventListener("click", () => {
   let Windinput = document.getElementById("Windinput").value.trim();
