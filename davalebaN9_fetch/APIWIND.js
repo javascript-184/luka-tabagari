@@ -224,3 +224,79 @@ document.getElementById("Windbtn").addEventListener("click", () => {
 // // ვაკონსერვებთ მასივს ლოკალ სთორიჯში
 // localStorage.setItem("daimaxsovre", JSON.stringify(existing));
 // localStorage.clear(existing)
+
+
+// // // ამის ქვემოთ არის კოდი თუ როგორ შეიძლება  წამოვიღოთ მთელი აპი ანროდესაც შევიყვანთ რაიმე ქალაქს მას მოყვება არა
+// // // კონკრეტუკი გრძედი და განედ არამედ მთელი ინფორმაცია რომელიც იმ api-ში არის რომლებიც გადმოვიტანე აქ
+// // //const location = data.results[0]; ამით ვეუბნები რომ resulte-ში რაც იქნება ყველაფერი პირველი გამოვიდეს ანუ ყველაფერი
+// // //0-ინდექსზე მდგარი ანუ რომელიც უფრო ახლოს იქნება იმ კონკრეტულ ქალაქთან თუ ქვეყანასთან ისენი ამოვიდეს
+// // // სწორედ მაგიტომაც არის 0 ინდექსი გამოყენებული რადგან ყველაზე ახლოს მდგარი ინდექსი ინფორმაცია წამოიღოს
+// // // results.innerHTML = ` ამ ნაწილს რაც შეეხება აქ ვქმნი ul li  სისტემას არარორდირებულ სიას რადგან რაც გამოვა უფრო
+// // //ლამაზი და  სინქრონულად იყოს თორე ჩევეულებრივ P ტეგშიდაც შეიძლებოდა მირებული შედეგის გამოსვლა
+
+// const clerButton = document
+//   .getElementById("clerButton")
+//   .addEventListener("click", todoBtn);
+// function todoBtn() {
+//   const usrInp = document.getElementById("usrInp").value.trim();
+//   const results = document.getElementById("results");
+
+//   fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${usrInp}`)
+//     .then((res) => res.json())
+//     .then((data) => {
+//       if (!data.results || data.results.length === 0) {
+//         alert("მონაცემები ვერ მოიძებნა");
+//         return;
+//       }
+//       const location = data.results[0];
+//       results.innerHTML = `
+//       <ol>
+//       <li style="color:black"><strong>აიდი</strong> ${location.id}</li>
+//       <li style="color:orange"><strong>ქალაქი</strong> ${location.name}</li>
+//       <li style="color:blue"><strong>გრძედი</strong> ${location.latitude}</li>
+//       <li style="color:Purple"><strong>განედი</strong> ${location.longitude}</li>
+//       <li style="color:gray"><strong>ამაღლება</strong> ${location.elevation}</li>
+//       <li style="color:Violet"><strong>ფუნქცია_კოდი</strong> ${location.feature_code}</li>
+//       <li style="color:brown"><strong>ქვეყნის კოდი</strong> ${location.country_code}</li>
+//       <li style="color:Pink"><strong>დროის სარტყელი</strong> ${location.timezone}</li>
+//       <li style="color:yellow"><strong>მოსახლეობა</strong> ${location.population}</li>
+//       <li style="color:white; text-shadow:2px 2px red;"><strong>ქვეყნის_იდენტიფიკატორი</strong> ${location.country_id}</li>
+//       <li style="color:green"><strong>ქვეყანა</strong> ${location.country}</li>
+//       </ol>
+//       `;
+//       let saved = JSON.parse(localStorage.getItem("neWboY")) || [];
+
+//       const alreadyExists = saved.some((item) => item.id === location.id);
+//       //ამით კონკრეტული id მოწმდება ამ api-ში და არა არის ეს ზოგადი მცნება ეს არის კონკრეტული id
+//     //   ეს ამოწმებს, არსებობს თუ არა უკვე მასივში saved ისეთი ობიექტი, რომლის id ზუსტად ემთხვევა location.id-ს.
+//     // რადგან ერათიდა იგივე 2 id ის მქონე ქვეყანა ვერ იქნება
+//     // რატომ id?
+//     // ერთი და იგივე ქალაქი ყოველთვის ექნება ერთსა და იმავე id-ს.
+//     // id არის უნიკალური იდენტიფიკატორი API-ში.
+//     // ამიტომაც შეგიძლია დაეყრდნო მხოლოდ id-ს და დარწმუნდე, რომ არ მოხდება დუბლირება.
+//     //ანუ id არის ყველაზე სანდო რადგა 2 ერთნაირი id არ იქნება
+//     // რადგან ერთი და იგივე id-ის მქონე ქვეყანა არ შეიძლება ორჯერ არსებობდეს, ამიტომ საკმარისია id-ით შევამოწმოთ!
+
+
+
+
+       
+//       if (!alreadyExists) {
+//         saved.push(location); 
+//         localStorage.setItem("neWboY", JSON.stringify(saved));
+//       } 
+//       //ამ შემთხვეევაში კი ვეუბნებით თუ არ არის alreadyExists ანუ არ შეიცავ ი მოქმედებას რსაც alreadyExists აერის ასახული მაშ
+//       //მოხდეს saved.push(location); ანუ ამატება ამაში როგროც მასივი ასევე ლოკალსთორიჯიში მოოხდეს setItem-ით დამატება
+//       //სტრინგად saved-ის რაც ნიშნავს რომ newboy-ში რაც იქნება ყვეალფერი უნდა გახდეს მასივი ანუ neWboY ამის მნიშვნელობა
+//       //რადგან neWboY არის გასაღები.
+
+//       // //   localStorage.clear(location)
+//     })
+
+//     .catch((err) => {
+//       results.innerHTML = "<p>დაფიქსირდა შეცდომა</p>";
+//       console.error(err);
+//     });
+// }
+
+// todoBtn();
