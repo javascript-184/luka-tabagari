@@ -1,0 +1,245 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+#product {
+  color: blueviolet;
+  text-shadow: 2px 2px 3px red;
+  font-size: 35px;
+}
+.header{
+    width:50%;
+    margin: auto;
+}
+.maindiv {
+  margin: auto;
+  width: 80%;
+  align-items: center;
+}
+.stringCals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#input {
+  padding: 7px;
+  background-color: whitesmoke;
+  width: 20%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 2px 2px 3px red;
+  margin-top: 50px;
+}
+.namenDiv {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+  align-items: center;
+}
+.alldiv {
+  display: inline-block;
+  padding: 5px;
+  background-color: orange;
+  color: black;
+  transition: 1s;
+}
+.newdivMain {
+   align-items: center;
+    display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 30px;
+}
+.watchesDIv {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#button {
+  width: 50%;
+  padding: 4px;
+  background-color: orange;
+  color: white;
+}
+.price {
+  color: red;
+  text-decoration: line-through;
+}
+.pricesDIv {
+  display: flex;
+  gap: 8px;
+}
+.marger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.newprice {
+  color: green;
+}
+.SHirtsdiv {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.burGermarger {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.shesback {
+  width: 2000px;
+  height: 400px;
+  border-radius: 10%;
+  box-shadow: 2px 3px 20px red;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./images/backgrundshies.avif");
+}
+.burgerBack {
+    width: 1000px;
+    height: 400px;
+  border-radius: 10%;
+  box-shadow: 2px 3px 20px red;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./images/backgroundBurger.avif");
+}
+.backgrundSMerger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
