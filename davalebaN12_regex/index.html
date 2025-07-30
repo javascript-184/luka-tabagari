@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="input" placeholder="შეიყვანეთ პაროლი" type="text" />
+    <button id="button">click</button>
+    <script src="./regex.js"></script>
+  </body>
+</html>
+<style>
+  #div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10%;
+  }
+  input::placeholder {
+    font-size: 12px;
+    color: gray;
+    opacity: 1;
+    font-style: italic;
+  }
+  .placeholder-error::placeholder {
+    color: red;
+    font-size: 7px;
+    opacity: 1;
+    font-style: italic;
+  }
+  .plentch::placeholder {
+    color: green;
+    opacity: 1;
+    font-style: italic;
+    font-family: 10px;
+  }
+  #button {
+    display: flex;
+    padding: 10px;
+    margin: auto;
+  }
+</style>

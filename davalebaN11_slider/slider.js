@@ -43,7 +43,6 @@
 // }))
 
 
-
 let slide = document.querySelectorAll(".shesback,.burgerBack");
 let index = 0;
 function setintevale(){
@@ -89,7 +88,6 @@ input.addEventListener("input",function(){
     }
   })
 })
-
 
 
 
