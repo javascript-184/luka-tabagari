@@ -1,52 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="margerdiv">
- <input id="input" type="text">
-    <button id="button"></button>
-    <div id="inputsText"></div>
+      <h1 id="valideishen">ვალიდალური</h1>
+
+      <input id="input" type="text" />
+      <button id="button"></button>
+      <div id="inputsText"></div>
     </div>
-   
-</body>
-<script src="./valiDator.js"></script>
+
+    <div class="booturn-clas">
+      <div class="but1">
+        <a href="./index.html">1</a>
+      </div>
+
+      <div class="but1">
+        <a href="./Numberregex.html">2</a>
+      </div>
+
+      <div class="but1">
+        <a href="./fonst.html">3</a>
+      </div>
+    </div>
+  </body>
+  <script src="./valiDator.js"></script>
 </html>
 <style>
-    #button{
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        background-color: aquamarine;
-        width: 10%;
+  #valideishen{
+    color: white;
+    text-shadow: 2px 2px 3px red;
+    animation-name: ll;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes ll{
+    10%{
+      color: gray;
+      text-shadow: 2px 3px 2px yellow; 
     }
-    .margerdiv{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-        
+      20%{
+      color: rgb(253, 9, 9);
+      text-shadow: 2px 3px 2px rgb(82, 8, 255); 
+      font-style: italic;
     }
-    @font-face {
-    font-family: 'ALK Tall Nusxuri';
-    src: url('../fonts/alk-tall-nusxuri-webfont.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/alk-tall-nusxuri-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/alk-tall-nusxuri-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/alk-tall-nusxuri-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/alk-tall-nusxuri-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/alk-tall-nusxuri-webfont.svg#alk_tall_nusxuriregular') format('svg'); /* Legacy iOS */
-}
-@font-face {
-    font-family: 'ALK Rounded Mtav Med';
-    src: url('../fonts/alk-rounded-mtav-med-webfont.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/alk-rounded-mtav-med-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/alk-rounded-mtav-med-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/alk-rounded-mtav-med-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/alk-rounded-mtav-med-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/alk-rounded-mtav-med-webfont.svg#alk_rounded_mtav_medregular') format('svg'); /* Legacy iOS */
-}
+  }
+  #input {
+    color: white;
+    text-shadow: 2px 1px 3px red;
+    width: 20%;
+    height: 30px;
+    font-size: 17px;
+    animation-name: i;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+  }
+  @keyframes i {
+    10% {
+      background-color: blue;
+      border-radius: 10px;
+      border-color: red;
+      text-align: center;
+    }
+    20% {
+      background-color: rgb(140, 140, 165);
+      border-radius: 30px;
+      border-color: rgb(21, 221, 64);
+      text-align: none;
+    }
+    30% {
+      background-color: rgb(11, 11, 179);
+      border-radius: 30px;
+      border-color: rgb(204, 2, 120);
+      text-align: none;
+    }
+  }
+  .booturn-clas {
+    display: flex;
+    gap: 15px;
+  }
+  .booturn-clas a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+  .but1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 5%;
+    height: 30px;
+    background-color: beige;
+    border-color: red;
+    box-shadow: 2px 2px greenyellow;
+  }
+  #button {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: aquamarine;
+    width: 10%;
+  }
+  .margerdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @font-face {
+    font-family: "ALK Tall Nusxuri";
+    src: url("../fonts/alk-tall-nusxuri-webfont.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/alk-tall-nusxuri-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      /* IE6-IE8 */ url("../fonts/alk-tall-nusxuri-webfont.woff2")
+        format("woff2"),
+      /* Super Modern Browsers */ url("../fonts/alk-tall-nusxuri-webfont.woff")
+        format("woff"),
+      /* Pretty Modern Browsers */ url("../fonts/alk-tall-nusxuri-webfont.ttf")
+        format("truetype"),
+      /* Safari, Android, iOS */
+        url("../fonts/alk-tall-nusxuri-webfont.svg#alk_tall_nusxuriregular")
+        format("svg"); /* Legacy iOS */
+  }
+  @font-face {
+    font-family: "ALK Rounded Mtav Med";
+    src: url("../fonts/alk-rounded-mtav-med-webfont.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/alk-rounded-mtav-med-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      /* IE6-IE8 */ url("../fonts/alk-rounded-mtav-med-webfont.woff2")
+        format("woff2"),
+      /* Super Modern Browsers */
+        url("../fonts/alk-rounded-mtav-med-webfont.woff") format("woff"),
+      /* Pretty Modern Browsers */
+        url("../fonts/alk-rounded-mtav-med-webfont.ttf") format("truetype"),
+      /* Safari, Android, iOS */
+        url("../fonts/alk-rounded-mtav-med-webfont.svg#alk_rounded_mtav_medregular")
+        format("svg"); /* Legacy iOS */
+  }
+  a {
+    text-decoration: none;
+  }
 </style>

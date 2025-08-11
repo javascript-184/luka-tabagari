@@ -11,18 +11,89 @@
       <button id="button"></button>
       <div id="textsdiv"></div>
     </div>
+       <div class="booturn-clas">
+      <div class="but1">
+        <a href="./index.html">1</a>
+      </div>
+      
+      <div class="but1" >
+        <a href="./fonst.html">2</a>
+      </div>
+      
+      <div class="but1">
+        <a href="./validator.html">3</a>
+      </div>
+    </div>
   </body>
   <script src="./Numreregx.js"></script>
 </html>
 <style>
+
+   .booturn-clas {
+    display: flex;
+    gap: 15px;
+  }
+   .booturn-clas a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+  .but1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 5%;
+    height: 30px;
+    background-color: beige;
+    border-color: red;
+    box-shadow: 2px 2px greenyellow;
+  }
+   a{
+    text-decoration: none;
+  }
     #input{
-        width: 10%;
+        color: white;
+        text-shadow: 2px 1px 3px red;
+        width: 20%;
+        height: 30px;
+        font-size: 17px;
+        animation-name: i;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
     }
+    @keyframes i{
+      10%{
+        background-color: blue;
+        border-radius: 10px;
+        border-color: red;
+      }
+       20%{
+        background-color: rgb(140, 140, 165);
+        border-radius: 30px;
+        border-color: rgb(21, 221, 64);
+      }
+       30%{
+        background-color: rgb(11, 11, 179);
+        border-radius: 30px;
+        border-color: rgb(204, 2, 120);
+
+      }
+    }
+
   #button {
     width: 50px;
     height: 20px;
+    border-radius: 100px;
+
+
   }
-  .margerDIv {
+  #button:hover{
+    transition: 4s;
+    background-color: aqua;
+  }
+   .margerDIv {
     display:flex;
     flex-direction: column;
     gap: 10px;

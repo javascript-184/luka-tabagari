@@ -8,10 +8,48 @@
   <body>
     <input id="input" placeholder="შეიყვანეთ პაროლი" type="text" />
     <button id="button">click</button>
-    <script src="./regex.js"></script>
+     <div class="booturn-clas">
+      <div class="but1">
+        <a href="./fonst.html">1</a>
+      </div>
+      
+      <div class="but1" >
+        <a href="./Numberregex.html">2</a>
+      </div>
+      
+      <div class="but1">
+        <a href="./validator.html">3</a>
+      </div>
+    </div>
+    
   </body>
+      <script src="./regex.js"></script>
 </html>
 <style>
+   .booturn-clas {
+    display: flex;
+    gap: 15px;
+  }
+   .booturn-clas a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+  .but1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 5%;
+    height: 30px;
+    background-color: beige;
+    border-color: red;
+    box-shadow: 2px 2px greenyellow;
+  }
+   a{
+    text-decoration: none;
+  }
   #div {
     display: flex;
     justify-content: center;
@@ -22,6 +60,33 @@
     padding: 10px;
     margin: auto;
     border-radius: 10%;
+    font-size: 20px;
+    background-color: aliceblue;
+    border-color: rgb(33, 7, 102);
+    box-shadow: 2px 2px 4px rgb(75, 255, 30);
+    animation-name: l;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes l{
+    10%{
+      background-color: green;
+      box-shadow: 2px 2px 4px rgb(16, 187, 218);
+      border-color: rgb(175, 148, 248);
+      text-shadow: 2px 2px 3px red;
+    }
+      20%{
+      background-color: rgb(121, 218, 121);
+      box-shadow: 2px 2px 4px rgb(22, 35, 37);
+      border-color: rgb(57, 0, 214);
+      text-shadow: 2px 2px 3px rgb(243, 115, 115);
+    }
+    30%{
+        background-color: rgb(236, 129, 6);
+      box-shadow: 2px 2px 4px rgb(20, 255, 11);
+      border-color: rgb(253, 19, 195);
+      text-shadow: 2px 2px 3px rgb(133, 6, 6);
+    }
   }
   input::placeholder {
     font-size: 12px;

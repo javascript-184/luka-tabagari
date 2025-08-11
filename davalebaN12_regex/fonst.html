@@ -12,12 +12,70 @@
       <button id="button"></button>
       <div id="textand"></div>
     </div>
+
+    <div class="booturn-clas">
+      <div class="but1">
+        <a href="./index.html">1</a>
+      </div>
+      
+      <div class="but1" >
+        <a href="./Numberregex.html">2</a>
+      </div>
+      
+      <div class="but1">
+        <a href="./validator.html">3</a>
+      </div>
+    </div>
   </body>
   <script src="./fost.js"></script>
 </html>
 <style>
+  .booturn-clas {
+    display: flex;
+    gap: 15px;
+  }
+   .booturn-clas a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+  .but1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 5%;
+    height: 30px;
+    background-color: beige;
+    border-color: red;
+    box-shadow: 2px 2px greenyellow;
+  }
+  #input {
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 3px red;
+    box-shadow: 2px 2px 5px rgb(255, 14, 147);
+    background-color: rgb(159, 202, 240);
+    border-radius: 15%;
+    margin-top: 50px;
+    animation-name: af;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    font-size: 20px;
+  }
+  @keyframes af {
+    10% {
+      background-color: aqua;
+      box-shadow: 2px 2px 5px rgb(84, 255, 190);
+    }
+    20% {
+      background-color: rgb(46, 9, 255);
+      box-shadow: 2px 2px 5px rgb(66, 0, 50);
+    }
+  }
   .new {
-    display: inline-block;
+    display: inline;
     color: white;
     text-shadow: 2px 2px 3px red;
     box-shadow: 2px 2px 3px rgb(122, 202, 122);
@@ -42,7 +100,7 @@
       border-width: 3px;
       border-color: rgb(189, 21, 21);
     }
-    20%{
+    20% {
       color: rgb(26, 18, 18);
       text-shadow: 2px 2px 3px rgb(240, 23, 59);
       box-shadow: 2px 2px 3px rgb(255, 17, 215);
@@ -101,5 +159,8 @@
 
     text-shadow: 2px 3px 5px rgb(224, 222, 222);
     box-shadow: 3px 2px 2px rgb(219, 13, 13);
+  }
+  a{
+    text-decoration: none;
   }
 </style>
