@@ -37,6 +37,30 @@ function fostafuncshen() {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //განმარტება ამ კოდის მხოლოდ js ნაწილი
 
 // let button = document.getElementById("button");
@@ -116,4 +140,6 @@ function fostafuncshen() {
   // textand.appendChild(p);
   // ყველაზ ესაინტერესო ამ შემთვევაშ ხდეაბ   textand.appendChild(p);  textand-ში ამ P-ჩამატება როგრც შვილობილის
   // appendChild()-ის საშვალებით
+
+  
  
