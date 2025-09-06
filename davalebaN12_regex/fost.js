@@ -34,7 +34,11 @@ function fostafuncshen() {
   p.style.fontSize = "20px";
 
   textand.appendChild(p);
+  
 }
+let namee=12
+let age=1
+import(namee,age)
 
 
 
