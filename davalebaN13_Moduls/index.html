@@ -1,5 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>შეკითვები</title>
+</head>
+<body>
+<div class="question-block">
+  <p class="question-text">რას = 2+2 ?!</p>
+  <div class="options" data-correct="4">
+    <div class="marger1">
+      <div class="option" data-value="1"><span>1.</span>1</div>
+      <div class="option" data-value="4"><span>2.</span>4</div>
+    </div>
+    <div class="marger2">
+      <div class="option" data-value="5"><span>3.</span>5</div>
+      <div class="option" data-value="6"><span>4.</span>6</div>
+    </div>
+  </div>
+    <div class="resolte"></div>
+</div>
+
+<div class="question-block">
+  <p class="question-text">რას = 3+2 ?!</p>
+  <div class="options" data-correct="5">
+    <div class="marger1">
+      <div class="option" data-value="1"><span>1.</span>3</div>
+      <div class="option" data-value="4"><span>2.</span>2</div>
+    </div>
+    <div class="marger2">
+      <div class="option" data-value="5"><span>3.</span>5</div>
+      <div class="option" data-value="6"><span>4.</span>7</div>
+    </div>
+  </div>
+    <div class="resolte"></div>
+</div>
+
+<div class="question-block">
+  <p class="question-text">ვინ იყო საქართველოს პირველი მეფე?</p>
+  <div class="options" data-correct="6">
+    <div class="option" data-value="1">დავით-კურაპალატი</div>
+    <div class="option" data-value="4">ფარნავაზი</div>
+    <div class="option" data-value="5">თამარი</div>
+    <div class="option" data-value="6">ვახტანგ-გორგასალი</div>
+  </div>
+    <div class="resolte"></div>
+</div>
+
+<div class="question-block">
+  <p class="question-text font1">ვინ დაარსა თბილისი?</p>
+  <div class="options" data-correct="1">
+    <div class="option" data-value="1">ვახტანგ-გორგასალმა</div>
+    <div class="option" data-value="4">მირიან-მეფემ</div>
+    <div class="option" data-value="5">ქეთევან-დეოფალმა</div>
+    <div class="option" data-value="6">აბო თბილელმა</div>
+  </div>
+    <div class="resolte"></div>
+</div>
+
+<div class="question-block">
+  <p class="question-text new2">როდის ჩატარადა დიდ-გორის ბრძოლა?</p>
+  <div class="options" data-correct="5">
+    <div class="option option2" data-value="1"><span>1.</span>2010.წ</div>
+    <div class="option option2" data-value="4"><span>2.</span>1990.წ</div>
+    <div class="option option2" data-value="5"><span>3.</span>1121.წ</div>
+    <div class="option option2" data-value="6"><span>4.</span>1131.წ</div>
+  </div>
+    <div class="resolte"></div>
+</div>
+
+    
+
+    
+</body>
+</html>
+<script src="./index.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+ეს ლოგიკა თავისი ჯს ით არის გამართული და სწორი შემიძლია გამოვიყენო
+როცა მომინდება რადგან სწორია! ეხლა უფრო დიდი რამეს ვაკეთებ და მაგიტომაც ვთიშავ
+დროებით ამ კოდს -->
+ <!-- <!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,3 +152,107 @@
   </body>
   <script src="./index.js"></script>
 </html>
+<script>
+// ეს ლოგიკა რომლეიც აქ წერია მუშაობს მხოლოდ ერთი კითვის ერთი სწორი პასუხისთვის
+// მე მინდა რომ მრავალმხრივი იყოს და ეს ჩემი შრომითვ გავაკეთე ეხალ მინდა რომ ბევრ 
+// კითვებზე იყოს ორიენტირებული !და უნდა დავიწყო ამის კეთება ამ კოდს გავთიშავ
+// let marger = document.querySelector(".marger");
+// let options = marger.querySelectorAll(".option");
+// const results = document.getElementById("results");
+
+// const correctAnswer = 4;
+// options.forEach((options) => {
+//   options.addEventListener("click", clickfuncShen);
+// });
+
+// function clickfuncShen(event) {
+//   const clickedOption = event.currentTarget;
+//   const dataElement = clickedOption.querySelector(".datacals");
+//   const answer = Number(dataElement.getAttribute("value"));
+//   document.querySelectorAll(".option").forEach(opt => {
+//     opt.style.backgroundColor = "rgb(235, 241, 241)";
+//   });
+
+//   if (answer === correctAnswer) {
+//     clickedOption.style.backgroundColor = "green";
+//     results.textContent = "სწორია ✅";
+//     results.style.color = "white";
+//     results.style.textShadow = "2px 2px 3px red";
+//     results.style.fontSize = "23px";
+//   } 
+//   else {
+//     clickedOption.style.backgroundColor = "red";
+//     results.textContent = `არასწორია ❌ სწორი პასუხი იყო: ${correctAnswer}`;
+//     results.style.color = "red";
+//     results.style.fontSize = "18px";
+
+
+//       document.querySelectorAll(".option").forEach(opt => {
+//       const correctData = opt.querySelector(".datacals");
+//       const val = Number(correctData.getAttribute("value"));
+//       if (val === correctAnswer) {
+//         opt.style.backgroundColor = "green";
+//       }
+//     });
+//   }
+// }
+// აქამდეე!!!
+
+
+
+// ეს კოდიც ამაზე მუშობს იგოვე რამეს ასრულებს უბრალოდ ეს დამიწერა
+// ჩარჯიბითიმ და ისე მაქვს შენახული ჯს დან გადმოვიტანე ანუ ეს არის 
+// ერთი დიდი კოდი ეს ჯს ლოგიკაც ამაზე მუშაობს უბრალოდ ხელოვნურია
+// და უბრალოდ მაქვს მაგრამ აქ ვინახავ რადგან იყოს როცა მომინდებ ამექნება 
+// გამზადებულიი{
+// // ვიღებთ კითხვას
+// const questionText = document.querySelector(".kitxvan1").textContent;
+
+// // ვპოულობთ მათემატიკურ ნაწილს ტექსტიდან (რეჯექსის გარეშე)
+// let expression = "";
+// const allowed = ["+", "-", "*", "/", " "];
+
+// for (let i = 0; i < questionText.length; i++) {
+//   const char = questionText[i];
+//   if (!isNaN(char) || allowed.includes(char)) {
+//     expression += char;
+//   }
+// }
+
+// // გამოთვლა
+// const correctAnswer = eval(expression.trim());
+
+// // ვიღებთ ყველა პასუხს
+// const options = document.querySelectorAll(".option");
+// const resultsDiv = document.getElementById("results");
+
+// // თითოეულზე ვამატებთ click ფუნქციას
+// options.forEach(option => {
+//   option.addEventListener("click", () => {
+//     // reset ფერები
+//     options.forEach(opt => {
+//       opt.style.backgroundColor = "rgb(235, 241, 241)";
+//     });
+
+//     // ვიღებთ პასუხს value ატრიბუტიდან
+//     const dataElement = option.querySelector(".datacals");
+//     const answer = Number(dataElement.getAttribute("value"));
+
+//     // ვადარებთ სწორ პასუხს
+//     if (answer === correctAnswer) {
+//       option.style.backgroundColor = "green";
+//       resultsDiv.textContent = "სწორია ✅";
+//       resultsDiv.style.color = "green";
+//     } else {
+//       option.style.backgroundColor = "red";
+//       resultsDiv.textContent = `არასწორია ❌ სწორი პასუხი იყო: ${correctAnswer}`;
+//       resultsDiv.style.color = "red";
+//     }
+
+//     resultsDiv.style.marginTop = "20px";
+//     resultsDiv.style.fontSize = "20px";
+//   });
+// });
+
+// }
+ </script> 
