@@ -26,3 +26,18 @@ document.querySelectorAll(".options").forEach((optionBlock) => {
     });
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+// იმპორტირება ფაილის აქედან!!
+// import { biGbox, funFuncShen } from "./import.js";
+// აქამდეე!!!
+
