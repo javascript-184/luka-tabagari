@@ -1,5 +1,4 @@
 // // @ts-chack
-
 // let button=document.querySelector(".button")
 // let input=document.querySelector(".input")
 
@@ -289,15 +288,13 @@
 // )
 //   .then((res) => res.json())
 //   .then((data) => {
-  
+
 //     data.data.forEach(element => {
 //       element.id="Ne"
 //       element.name="biutiful"
 //       element.min_size="mariami"
- 
-      
+
 //     });
-     
 
 //     console.log(data)
 //   })
@@ -305,3 +302,38 @@
 //     result.innerHTML = "Error loading data ❌";
 //     console.error(err);
 //   });
+
+
+
+
+
+
+// fetch(`https://api.coinlore.net/api/tickers/`)
+// .then(res=>res.json())
+// .then(data=>{
+// data.data[0].mma="boxSing"
+// let firstdata=data.data[0]
+//  const keys = Object.keys(firstdata);
+//  const values=Object.values(firstdata)
+//  let result=document.getElementById("result")
+
+// for(let key of keys){
+//     if(key.length > 3){
+//         result.innerHTML+=`<span style="color:red">${key}</span><br>`
+       
+//     }else{
+//     console.log("er")
+ 
+//     }
+// }
+
+ 
+
+
+//     console.log(data.data[0])
+
+// })
+
+console.log("lika")
+
+
