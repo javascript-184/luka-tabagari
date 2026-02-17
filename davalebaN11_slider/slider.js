@@ -90,7 +90,6 @@ input.addEventListener("input",function(){
 })
 
 
-// shevcvale es progaramam
 
 
 
